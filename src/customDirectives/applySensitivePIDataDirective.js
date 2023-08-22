@@ -23,13 +23,8 @@ export const applySensitivePIDataDirective = (
             type = 'default',
             useDemoData = false,
           } = sensitivePIDataDirective;
-          // const origResolveFunc = async () =>
-          //   await resolve(source, args, context, info);
-
-          // return redactSensitivePIData(useDemoData, type, origResolveFunc);
-
+          
           // define the field resolve logic
-          console.log("test directive--", directiveName)
           return redactValue();
         };
         return fieldConfig;
